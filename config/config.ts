@@ -173,6 +173,53 @@ export default {
                   icon: 'user',
                   component: './testModule/demo6',
                 },
+                {
+                  path: '/testModule/demo7',
+                  name: 'demo7',
+                  title: 'demo7',
+                  icon: 'user',
+                  component: './testModule/demo7',
+                },
+                {
+                  path: '/testModule/demo8',
+                  name: 'demo8',
+                  title: 'demo8',
+                  icon: 'user',
+                  component: './testModule/demo8',
+                },
+                {
+                  path: '/testModule/demo9',
+                  name: 'demo9',
+                  title: 'demo9',
+                  icon: 'user',
+                  component: './testModule/demo9',
+                },
+                {
+                  path: '/testModule/demo10',
+                  name: 'demo10',
+                  title: 'demo10',
+                  icon: 'user',
+                  component: './testModule/demo10',
+                },
+                {
+                  path: '/testModule/demo11',
+                  name: 'demo11',
+                  title: 'demo11',
+                  icon: 'user',
+                  component: './testModule/demo11',
+                },
+              ],
+            },
+            {
+              path: '/train',
+              name: '火车业务',
+              icon: 'profile',
+              routes: [
+                {
+                  path: '/train/list',
+                  name: '火车业务查询',
+                  component: './train/List',
+                }
               ],
             },
             {
