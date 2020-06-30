@@ -1,0 +1,581 @@
+.container {
+    width: 100%;
+    height: 100%;
+    //flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。
+    // 该属性有两个快捷值：auto (1 1 auto) 和 none (0 0 auto)。
+    .authorInfoBlock {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      .avatarLink {
+          font-size: 0;
+
+          .imgUrl {
+            background-image: url("https://user-gold-cdn.xitu.io/2017/7/18/64d82b70650d11ed806f611d929c7b1e?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1");
+            flex: 0 0 auto;
+            margin-right: 1rem;
+            width: 3.333rem;
+            height: 3.333rem;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+            background-position: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #eee;
+          }
+      }
+      .infoBox {
+        min-width: 0;
+        flex-grow: 1;
+
+        .username {
+          display: inline-block;
+          max-width: 100%;
+          font-size: 16px;
+          font-weight: 700;
+          color: #333;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          .rank {
+            margin-left: .33rem;
+            vertical-align: middle;
+          }
+          a {
+            text-decoration: none;
+            color: #909090;
+          }
+        }
+      }
+      .metaBox {
+        font-size: 14px;
+        color: #909090;
+
+        .time {
+          letter-spacing: 1px
+        }
+        .viewsCount {
+            margin-left: .5rem
+        }
+      }
+    }
+    .followBtn {
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #007fff;
+        color: #fff;
+        border-radius: 2px;
+        border: none;
+        padding: .5rem 1.3rem;
+        outline: none;
+        transition: background-color .3s,color .3s;
+        margin: 0 0 0 auto;
+        padding: 0;
+        width: 55px;
+        height: 26px;
+        font-size: 13px;
+        border: 1px solid #6cbd45;
+        color: #6cbd45;
+        background-color: #fff;
+    }
+
+
+    .userInfoBlock {
+      display: flex;
+      padding: 2.5rem;
+
+      background-color: #fff;
+      border-radius: 2px;
+
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+
+      .useUrl {
+        background-image: url("https://user-gold-cdn.xitu.io/2017/7/18/64d82b70650d11ed806f611d929c7b1e?imageView2/1/w/180/h/180/q/85/format/webp/interlace/1");
+
+        flex: 0 0 auto;
+        margin-right: 2.4rem;
+        width: 7.5rem;
+        height: 7.5rem;
+        background-color: #f9f9f9;
+        border-radius: 50%;
+
+        display: inline-block;
+        position: relative;
+        background-position: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .infoBox {
+        flex: 1 1 auto;
+        margin-right: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .top {
+          display: flex;
+          align-items: center;
+       
+          .username {
+            margin: 0;
+            padding: 0;
+            font-size: 2.167rem;
+            font-weight: 600;
+            line-height: 1.2;
+            color: #000;
+
+            .rank {
+              margin-left: .33rem;
+              vertical-align: middle;
+
+              img {
+                vertical-align: super;
+                width: auto;
+                height: auto;
+              }
+            }
+          }
+        }
+        .position {
+            margin-top: 10px;
+            display: flex;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            color: #72777b;
+            overflow: hidden;
+
+            .icon {
+                flex: 0 0 auto;
+                margin-right: .6rem;
+                height: 1.8rem;
+            }
+            .content {
+                flex: 1 1 auto;
+                font-size: 1.17rem;
+
+                .split {
+                  display: inline-block;
+                  margin: 0 .5em;
+                  width: 1px;
+                  height: .7em;
+                  background-color: #72777b;
+                  opacity: .5;
+                }
+            }
+        }
+        .intro {
+            margin-top: 5px;
+            display: flex;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            color: #72777b;
+            overflow: hidden;
+
+            .icon {
+              flex: 0 0 auto;
+              margin-right: .6rem;
+              height: 1.8rem;
+            }
+            .content {
+              flex: 1 1 auto;
+              font-size: 1.17rem;
+            }
+        }
+      }
+      .actionBox {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .linkBox {
+          margin-bottom: auto;
+
+          a {
+            text-decoration: none;
+            cursor: pointer;
+            color: #909090;
+
+            .icon {
+              width: 21;
+              height: 18;
+            }
+          }
+        }
+        .followBtn {
+            width: 9rem;
+            color: #6cbd45;
+
+            margin: 1rem 0 0;
+            padding: 0;
+            height: 2.834rem;
+            font-size: 1.333rem;
+            font-weight: 500;
+            line-height: 1.2;
+            border: 1px solid;
+            background-color: #fff;
+            border-radius: 4px;
+
+            // -webkit-appearance: none;
+            // appearance: none;
+            // background-color: #007fff;
+            // color: #fff;
+            // border-radius: 2px;
+            // border: none;
+            // padding: .5rem 1.3rem;
+            outline: none;
+            transition: background-color .3s,color .3s;
+            cursor: pointer;
+        }
+      }
+    }
+    .statBlock {
+      width: 240px;
+      margin-top: 5px;
+
+      background-color: #fff;
+      border-radius: 2px;
+
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+
+      .blockTitle {
+        padding: 1.333rem;
+        font-size: 1.333rem;
+        font-weight: 600;
+        color: #31445b;
+        border-bottom: 1px solid rgba(230,230,231,.5);
+      }
+      .blockBody {
+        padding: 1.333rem;
+
+        .statItem {
+          margin-bottom: .8rem;
+
+          display: flex;
+          align-items: center;
+          font-size: 1.25rem;
+          color: #000;
+
+          .icon {
+            flex: 0 0 auto;
+            margin-right: 1.2rem;
+          }
+          .content {
+            display: flex;
+            align-items: center;
+            font-size: 1.25rem;
+            color: #000;
+          }
+        }
+      }
+    }
+    .followBB {
+      margin-top: 10px;
+      width: 240px;
+      display: flex;
+      position: relative;
+      margin-bottom: 1rem;
+
+      background-color: #fff;
+      border-radius: 2px;
+
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1px;
+        height: 50%;
+        background-color: #f3f3f4;
+        transform: translate(-50%,-50%);
+      }
+
+      .followItem {
+        flex: 1 1 auto;
+        padding: 1.333rem 0;
+        text-align: center;
+        color: #31445b;
+
+        .itemTitle {
+          font-size: 1.333rem;
+          font-weight: 500;
+        }
+        .itemCount {
+          margin-top: .5rem;
+          font-size: 1.25rem;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .activityItem {
+      margin-bottom: 8px;
+      background-color: #fff;
+      border-radius: .2rem;
+
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+
+      .sourceHearder {
+        padding: 0 20px;
+        display: flex;
+        height: 43px;
+        align-items: center;
+        border-bottom: 1px solid #ebebeb;
+        font-size: 13px;
+        color: #8a9aa9;
+        box-sizing: border-box;
+      }
+      .postItem {
+        .postHeader {
+          position: relative;
+          padding: 16px 20px 0;
+
+          .authorInfo {
+            display: flex;
+            align-items: center;
+
+            .userInfo {
+              display: inline;
+
+              .link {
+                font-size: 0;
+
+                .useUrl {
+                    background-image: url("https://user-gold-cdn.xitu.io/2019/6/2/16b17bc6f37d2e4e?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1");
+
+                    flex: 0 0 auto;
+                    width: 3.75rem;
+                    height: 3.75rem;
+                    border-radius: 50%;
+
+                    display: inline-block;
+                    position: relative;
+                    background-position: 50%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-color: #eee;
+                }
+              }
+            }
+          }
+          .authorInfoContent {
+            margin-left: 1rem;
+            font-size: 15px;
+            color: #8a9aa9;
+
+            .authorInfoHead {
+              display: flex;
+              align-items: center;
+
+              .infoBox {
+                display: inline;
+
+                .userName {
+                  font-weight: 600;
+                  font-size: 15px;
+                  color: #17181a;
+                }
+              }
+            }
+            .metaBox {
+                display: flex;
+                align-items: center;
+                margin: .3rem 0 0;
+                font-size: 13px;
+                color: #8a9aa9;
+                cursor: default;
+    
+                .position {
+                    max-width: 28rem;
+    
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+    
+                    .dot {
+                      margin: 0 .5em;
+                    }
+                }
+              }
+          }
+          .subscribeBtn {
+            margin: 0 0 0 auto;
+            padding: 0;
+            width: 55px;
+            height: 26px;
+            font-size: 13px;
+            border-color: #6cbd45;
+            color: #6cbd45;
+            border: 1px solid #37c700;
+            background-color: #fff;
+        
+          }
+        }
+        .postItemContent {
+          margin-left: 56px;
+          padding: 6px 20px 10px;
+
+          .postLike {
+            display: block;
+
+            .postItemtitle {
+                span {
+                    margin-right: 10px;
+                    padding: 3px 6px;
+                    display: inline-block;
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #007fff;
+                    background-color: #e5f2ff;
+                    border-radius: 2px;
+                }
+                h3 {
+                  margin: 0;
+                  display: inline;
+                  font-size: 17px;
+                  color: #17181a;
+                  line-height: 1.5;
+
+                  vertical-align: middle;
+                }
+            }
+          }
+          .richContent {
+            margin-top: 3px;
+            padding: 3px 0;
+            display: flex;
+
+            .postItemExcerpt {
+                margin-right: 16px;
+                font-size: 15px;
+                color: #5c6066;
+                line-height: 1.53;
+                flex: 1 1 auto;
+            }
+          }
+        }
+        .actionPosItem {
+          display: flex;
+          position: relative;
+          margin-top: 3px;
+          height: 34px;
+          border-top: 1px solid #ebebeb;
+
+          .likeAction {
+            flex: 1 1 33.333%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 100%;
+            cursor: pointer;
+            user-select: none;
+
+            &:not(:last-child):after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 0;
+                margin-top: -1rem;
+                width: 1px;
+                height: 2rem;
+                background-color: #ebebeb;
+            }
+
+            .actionTitleBox {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .actionItle {
+                  margin-left: 5px;
+                  font-size: 13px;
+                  color: #8a93a0;
+                }
+            }
+          }
+        }
+      }
+    }
+
+    .tips {
+        max-width: 800px;
+        height: 100px;
+        display: flex;
+        align-items: center; // 在容器设置这个属性，达到垂直居中效果。
+        background-color: #1e5dad;
+        border-radius: 15px;
+        margin: 25px auto;
+    }
+    .tips div:nth-child(1) {
+        flex: 1; //小盒子比例为1
+        margin-left: 25px;
+    }
+    .tips div:nth-child(2) {
+        flex: 9.5; //大盒子宽度比例 = 大盒子宽度/小盒子宽度
+    }
+    .tips p {
+        color: #fff;
+        text-align: left;
+        font-size: 20px;
+        line-height: 31px;
+    }
+
+
+    .frequency {
+        max-width: 1000px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        background-color: #b0b1b3;
+        height: 175px;
+    }
+    .fre_left {
+        flex: 1;
+    }
+    .fre_right {
+        flex: 4.78;
+    }
+    .fre_left div {
+        color: #fff;
+        width: 100px;
+        height: 100px;
+        background-color: #3ac1d5;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border: 10px solid #e7eef8;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 50px;
+    }
+    .fre_left p {
+        font-size: 26px;
+        height: 24px;
+        line-height: 31px;
+        padding-top: 17px;
+    }
+    .fre_right ul {
+        display: flex;
+    }
+    ul, ol {
+        list-style: none;
+    }
+    .fre_right ul li {
+        flex: 1;
+        color: #4c4c52;
+        font-size: 16px;
+        line-height: 31px;
+    }
+    // .fre_right ul li:before {
+    //     content: url(images/arrow.png);
+    // }
+
+}

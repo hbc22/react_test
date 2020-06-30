@@ -208,6 +208,13 @@ export default {
                   icon: 'user',
                   component: './testModule/demo11',
                 },
+                {
+                  path: '/testModule/demo12',
+                  name: 'demo12',
+                  title: 'demo12',
+                  icon: 'user',
+                  component: './testModule/demo12',
+                },
               ],
             },
             {
