@@ -15,6 +15,7 @@ export default {
   'menu.testModule.demo10': '测试用例10(usestate_useReducer)',
   'menu.testModule.demo11': '测试用例11(usestate_useReducer)',
   'menu.testModule.demo12': '测试用例12(style)',
+  'menu.testModule.demo13': '测试用例12(css3)',
   'menu.train': "火车业务",
   'menu.train.list': "火车查询列表",
   'menu.admin': '管理页',
