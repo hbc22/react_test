@@ -226,12 +226,12 @@ export default {
             },
             {
               path: '/train',
-              name: '火车业务',
+              name: 'train',
               icon: 'profile',
               routes: [
                 {
                   path: '/train/list',
-                  name: '火车业务查询',
+                  name: 'trainList',
                   component: './train/List',
                 }
               ],

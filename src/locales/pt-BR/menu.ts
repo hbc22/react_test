@@ -5,6 +5,8 @@ export default {
   'menu.login': 'Login',
   'menu.admin': 'Admin',
   'menu.admin.sub-page': 'Sub-Page',
+  // 'menu.train': 'Train',
+  // 'menu.train.list': 'list',
   'menu.register': 'Registro',
   'menu.register.result': 'Resultado de registro',
   'menu.dashboard': 'Dashboard',
