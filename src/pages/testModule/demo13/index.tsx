@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import styles from './index.less';
 // import {Image} from 'antd';
+let xxx2 = undefined;// ....@2
 function styleList () {
+    let xxx = undefined;    // ....@1
+    const xxx3 = useRef(0)  // ....@3
+    const [info] = useState({});
+    const [age, setAge] = useState(0);
+    const onClick = async () => {
+        setAge(age + 1)
+        xxx = 10;
+        xxx2 = 20;
+        xxx3.current = 30;
+        info.xxx4 = 40;
+    }
+
+    console.log(xxx);
+    console.log(xxx2);
+    console.log(xxx3.current);
+    console.log(info.xxx4);
     return (
         <div className={styles.contBox}>
          <div>
@@ -70,6 +87,14 @@ function styleList () {
                     </div>
                 </div>
             </div>
+          </div>
+
+
+          <div style={{marginTop: 100}}>
+          <div>{age}</div>
+            <button onClick={onClick}>
+                +
+            </button>
           </div>
         </div>
     );
