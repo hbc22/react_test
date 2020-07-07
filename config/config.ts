@@ -10,10 +10,11 @@ const { pwa } = defaultSettings;
 // preview.pro.ant.design only do not use in your production ;
 // preview.pro.ant.design 专用环境变量，请不要在你的项目中使用它。
 console.log('process.env;', process.env)
-const { ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION, REACT_APP_ENV } = process.env;
+const { ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION, REACT_APP_ENV, NODE_ENV } = process.env;
 const isAntDesignProPreview = ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION === 'site';
 console.log('process.env;11', REACT_APP_ENV)
 console.log('process.env;11',  isAntDesignProPreview)
+console.log('process.env;12',  NODE_ENV)//development
 
 const plugins: IPlugin[] = [
   ['umi-plugin-antd-icon-config', {}],
@@ -224,6 +225,20 @@ export default {
                   title: 'demo13',
                   icon: 'user',
                   component: './testModule/demo13',
+                },
+                {
+                  path: '/testModule/demo14',
+                  name: 'demo14',
+                  title: 'demo14',
+                  icon: 'user',
+                  component: './testModule/demo14',
+                },
+                {
+                  path: '/testModule/demo15',
+                  name: 'demo15',
+                  title: 'demo15',
+                  icon: 'user',
+                  component: './testModule/demo15',
                 },
               ],
             },

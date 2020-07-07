@@ -18,6 +18,8 @@ export default {
   'menu.testModule.demo11': '测试用例11(usestate_useReducer)',
   'menu.testModule.demo12': '测试用例12(style)',
   'menu.testModule.demo13': '测试用例12(css3)',
+  'menu.testModule.demo14': '测试用例14(uemo)',
+  'menu.testModule.demo15': '测试用例15(剪裁)',
   'menu.train': "火车业务",
   'menu.train.list': "火车查询列表",
   'menu.admin.sub-page': '二级管理页',
