@@ -88,13 +88,50 @@ function styleList () {
                 </div>
             </div>
           </div>
-
-
           <div style={{marginTop: 100}}>
           <div>{age}</div>
             <button onClick={onClick}>
                 +
             </button>
+          </div>
+          <div style={{marginTop: 100}}>
+            <h3 className={styles.QxT4hD}>
+              <div className={styles._10KzV0}>
+                <span>全部评论</span>
+                <span className={styles._2R7vBo}>4</span>
+                <span className={styles._1DVmvZ}>只看知道</span>
+              </div>
+              <div className={styles._2zSaYx}>
+                <div className={styles._1ekjko}>按时间倒序</div>
+                <div className={styles._1ekjko} style={{color: '#2d2d2d'}}>按时间正序</div>
+              </div>
+            </h3>
+
+            <div className={styles._2gPNSa}>
+              <div className={styles._2IUqvs}>
+                <a className={styles._1OhGeD}>
+                  <img className={styles._1_jhXc} src="https://upload.jianshu.io/users/upload_avatars/18576967/4518776a-54ef-46bb-9235-d708628fcfae?imageMogr2/auto-orient/strip|imageView2/1/w/80/h/80/format/webp" alt=""/>
+                </a>
+                <div className={styles._1K9gkf}>
+                  <div className={styles._23G05g}>
+                    <a className={styles._1OhGeD}>毛毛细雨_d1d1</a>
+                  </div>
+                  <div className={styles._1xqkrI}>
+                    <span>2楼 </span>
+                    <time>07.02 17:09</time>
+                  </div>
+                  <div className={styles._2bDGm4}>博主,能说的详细点么,jsObg是从哪里来的,我打印出来的window对象里面内有webkit属性,能解答一下呢</div>
+                  <div className={styles._2ti5br}>
+                    <div className={styles._3MyyYc}>
+                      <span className={styles._1Jvkh4}>
+                      123
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
     );
