@@ -18,6 +18,7 @@ export default {
   'menu.testModule.demo13': '测试用例12(css3)',
   'menu.testModule.demo14': '测试用例14(memo)',
   'menu.testModule.demo15': '测试用例15(剪裁)',
+  'menu.testModule.demo16': '测试用例16(shijian)',
   'menu.train': "火车业务",
   'menu.train.list': "火车查询列表",
   'menu.admin': '管理页',
