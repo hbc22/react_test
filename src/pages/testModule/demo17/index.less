@@ -1,0 +1,38 @@
+.container {
+  .alteradwarp {
+    background: rgba(0,0,0,.7);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    .alterad {
+      width: 400px;
+      position: relative;
+
+      .firimg {
+        vertical-align: middle;
+        width: 100%;
+      }
+      .adimg {
+        width: 20px;
+        position: absolute;
+        left: calc(50% - 10px);
+        bottom: -37px;
+        cursor: pointer;
+        vertical-align: middle;
+      }
+    }
+  }
+}

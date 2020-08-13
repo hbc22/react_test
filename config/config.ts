@@ -245,6 +245,13 @@ export default {
                   icon: 'user',
                   component: './testModule/demo16',
                 },
+                {
+                  path: '/testModule/demo17',
+                  name: 'demo17',
+                  title: 'demo17',
+                  icon: 'user',
+                  component: './testModule/demo17',
+                },
               ],
             },
             {
