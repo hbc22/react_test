@@ -84,6 +84,7 @@ class AccountSettings extends Component<
   };
 
   selectKey = (key: AccountSettingsStateKeys) => {
+    console.log('kkkk', key)
     this.setState({
       selectKey: key,
     });
@@ -152,7 +153,7 @@ class AccountSettings extends Component<
               selectedKeys={[selectKey]}
               onClick={({ key }) => this.selectKey(key as AccountSettingsStateKeys)}
             >
-              {this.getMenu()}
+              {this.getMenu()}QQ
             </Menu>
           </div>
           <div className={styles.right}>
