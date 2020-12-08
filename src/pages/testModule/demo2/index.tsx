@@ -1,4 +1,6 @@
 import React from 'react'
+// var dragula = require('react-dragula');
+import {dragula} from "react-dragula"
 
 class SubCounter extends React.Component {
     constructor(props) {
@@ -56,6 +58,9 @@ class SubCounterA extends React.Component {
 
     componentDidMount() {
         console.log('5、父组件挂载完成');
+        // let container = document.getElementById('container');
+        // var container = React.findDOMNode(this);
+        // dragula([container]);
     }
 
     shouldComponentUpdate(newProps, newState) {
@@ -86,6 +91,19 @@ class SubCounterA extends React.Component {
                 <p>{this.state.number}</p>
                 <button onClick={this.handleClick}>+</button>
                 {this.state.number<10?<SubCounter number={this.state.number}/>:null}
+
+
+                <div style={{height: 400, width: 400, margin: 50}}>
+                    <div id='container'>
+                    <div>Swap me around</div>
+                    <div>Swap her around</div>
+                    <div>Swap him around</div>
+                    <div>Swap them around</div>
+                    <div>Swap us around</div>
+                    <div>Swap things around</div>
+                    <div>Swap everything around</div>
+                    </div>
+                </div>
             </div>
         )
     }
