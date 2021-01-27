@@ -23,6 +23,7 @@ export default {
   'menu.testModule.demo16': '测试用例16(shijian)',
   'menu.testModule.demo17': '测试用例16=7(mark)',
   'menu.testModule.demo18': 'windowHighet',
+  'menu.testModule.demo19': 'windowHighet',
   'menu.train': "火车业务",
   'menu.train.list': "火车查询列表",
   'menu.admin.sub-page': '二级管理页',

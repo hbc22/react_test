@@ -104,6 +104,11 @@ class SubCounterA extends React.Component {
                     <div>Swap everything around</div>
                     </div>
                 </div>
+
+
+                <div style={{marginTop: 60}}>
+
+                </div>
             </div>
         )
     }

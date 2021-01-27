@@ -74,6 +74,7 @@
     "omit.js": "^1.0.2",
     "path-to-regexp": "2.4.0",
     "qs": "^6.9.0",
+    "rc-bullets": "^1.5.12",
     "react": "^16.8.6",
     "react-amap": "^1.2.8",
     "react-amap-plugin-autocomplete": "0.0.4",

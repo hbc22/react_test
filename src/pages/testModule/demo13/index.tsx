@@ -40,6 +40,7 @@ function styleList () {
                             <a href="#" className={styles.link}>
                               <img className={styles.imgIcon} src="https://search-operate.cdn.bcebos.com//8838beddf68a9853b53d604bccb180c2.png?authorization=bce-auth-v1%2Fc93fe3270045455693596cebb01c566e%2F2020-06-03T08%3A40%3A10Z%2F2592000%2F%2F7b84dbe8a83e5c0a865d9fa9147810d9f1dd486b84768bcb09645c369a81a987" />
                               <p className={styles.camp}>历年真题</p>
+                              <p className={styles.camp}>历年真题</p>
                             </a>
                         </div>
                         <div className={styles.spItem}>

@@ -1,5 +1,6 @@
 import React , {useEffect, useState } from 'react';
 import {DatePicker, Select, Table, Tooltip} from 'antd';
+import styles from './index.less';
 const moment = require('moment');
 interface IProps {
   deviceId ?: number
@@ -73,6 +74,48 @@ return (
                     onChange={onEndChange}
                     showTime={true}
                   />
+
+
+
+
+                  <div style={{marginTop: 50}}>
+                    <div className={styles.blogContentBox}>
+                      <div className={styles.articleHeaderBox}>
+                        <div className={styles.articleHeader}>
+                          <div className={styles.articleTitleBox}>
+                            <h1 className={styles.titleArticle} id="articleContentId">React,Hooks中useMemo的使用</h1>
+                          </div>
+                          <div className={styles.articleInfoBox}>
+                            <div className={styles.articleBarTop}>
+                              <img className={styles.articleTypeImg} src="https://csdnimg.cn/release/blogv2/dist/pc/img/original.png" alt="" />
+                              <div className={styles.barContent}>
+                                <a className={styles.foolowNickName}>进阶的巨人001</a>
+                                <span className={styles.time}>2020-07-29 23:14:50</span>
+                                <img className={styles.articleReadImg} src="https://csdnimg.cn/release/blogv2/dist/pc/img/articleReadEyes.png" alt="" />
+                                <span className={styles.num}>444</span>
+                                <a className={styles.unCollection}>
+                                  <img className={styles.articleCollectImg} style={{display: 'inlineBlock'}} src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollect.png" alt="" />
+                                  <span className={styles.num1}>收藏</span>
+                                  <span className={styles.num1}>1</span>
+                                </a>
+                              </div>
+                            </div>
+                            <div className={styles.blogTagesBox}>
+                              <div className={styles.tagsBox}>
+                                  <span className={styles.label}>文章标签：</span>
+                                  <a className={styles.tagsLink}>react</a>
+                                  <a className={styles.tagsLink}>Hooks</a>
+                                  <a className={styles.tagsLink}>UserMemo</a>
+                              </div>
+                            </div>
+                            <div className={styles.operating}>
+                                <a className={styles.bq}>版权</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 )
 }
