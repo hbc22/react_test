@@ -578,4 +578,214 @@
     //     content: url(images/arrow.png);
     // }
 
+
+    .newContainer {
+      margin-top: 50px;
+      display: block;
+      height: 800px;
+      width: 600px;
+      div {
+        display: block;
+      }
+      .xcpList {
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        .xcpListTitle {
+          font-family: PingFangSC-Semibold;
+          font-size: 18px;
+          line-height: 1;
+          color: #000;
+        }
+        .xcpListList {
+          div {
+            .xcpItem {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -webkit-flex-direction: row;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              padding-top: 40px;
+              font-size: 14px;
+              color: #222;
+              .left {
+                width: 64px;
+                .xAvatar {
+                  position: relative;
+                  display: block;
+                  width: 48px;
+                  height: 48px;
+                  .xAvatarPlaceholder {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url(https://b.bdstatic.com/searchbox/icms/searchbox/img/xcp-bd-logo.png) 50% 50% no-repeat;
+                    background-size: 50% 50%;
+                  }
+                  .xAvatarImg {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url(https://himg.bdimg.com/sys/portrait/item/wise.1.3f2849d6.H-5I_z8A9SKyAHFkQCJURA.jpg?time=2825);
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border-radius: 50%;
+                    &::after {
+                      content: "";
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      -webkit-box-sizing: border-box;
+                      box-sizing: border-box;
+                      width: 300%;
+                      height: 300%;
+                      border: 3px solid rgba(0,0,0,.1);
+                      border-radius: 100%;
+                      -webkit-transform: scale(.333333);
+                      transform: scale(.333333);
+                      -webkit-transform-origin: 0 0;
+                      transform-origin: 0 0;
+                    }
+                  }
+                }
+              }
+              .right {
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                .userBar {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                  -webkit-flex-direction: row;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  -webkit-box-pack: start;
+                  -webkit-justify-content: flex-start;
+                  -ms-flex-pack: start;
+                  justify-content: flex-start;
+                  -webkit-box-align: center;
+                  -webkit-align-items: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  font-family: PingFangSC-Regular;
+                  .userBarName {
+                    font-family: PingFangSC-Semibold;
+                    font-size: 13px;
+                    color: #222;
+                  }
+                }
+                .rightText {
+                  padding-top: 10px;
+                  font: 14px/22px PingFangSC-Regular;
+                  text-align: justify;
+                  color: #222;
+                  .spanText {
+                    padding-top: 10px;
+                    font: 14px/22px PingFangSC-Regular;
+                    text-align: justify;
+                    color: #222;
+                  }
+                }
+                .interactBar {
+                  position: relative;
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-pack: justify;
+                  -webkit-justify-content: space-between;
+                  -ms-flex-pack: justify;
+                  justify-content: space-between;
+                  -webkit-box-align: center;
+                  -webkit-align-items: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                  -webkit-flex-direction: row;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  padding-top: 16px;
+                  font-family: PingFangSC-Regular;
+                  font-size: 13px;
+                  color: #9195a3;
+                  .interactBarLeft {
+                    -webkit-box-pack: start;
+                    -webkit-justify-content: flex-start;
+                    -ms-flex-pack: start;
+                    justify-content: flex-start;
+                    .report {
+                      display: none;
+                      margin-left: 10px;
+                      cursor: pointer;
+                    }
+                  }
+                  .interactBarRight {
+                    -webkit-box-pack: end;
+                    -webkit-justify-content: flex-end;
+                    -ms-flex-pack: end;
+                    justify-content: flex-end;
+                    color: #222;
+                    .reply {
+                      cursor: pointer;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-align: center;
+                      -webkit-align-items: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      .icon {
+                        width: 20px;
+                        height: 20px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: 50%;
+                      }
+                      .replyIcon {
+                        background-image: url(https://b.bdstatic.com/searchbox/icms/searchbox/img/xcp-reply.png);
+                      }
+                    }
+                    .like {
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-align: center;
+                      -webkit-align-items: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      margin-left: 16px;
+                    }
+                  }
+                }
+                .interactBar > * {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-align: center;
+                  -webkit-align-items: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
 }

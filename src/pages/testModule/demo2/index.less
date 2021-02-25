@@ -1,0 +1,367 @@
+.div1 {
+  display: flex;
+  flex-wrap: wrap;
+
+  .div2 {
+    display: flex;
+    align-items: center;
+    margin: 0 15px 12px 0;
+    padding: 2.004px;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 2px;
+    img {
+      width: 21px;
+      height: 21px;
+      border-radius: 2px;
+      position: relative;
+      -o-object-fit: cover;
+      object-fit: cover;
+      ::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: inherit;
+        border-radius: inherit;
+        transition: opacity .2s;
+      }
+    }
+    .div3 {
+      padding: 0 9px;
+      font-size: 12px;//1rem = 12px
+      line-height: 21px;//1.75rem
+      color: #919191;
+    }
+  }
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #909090;
+}
+div {
+    display: block;
+}
+
+.footerAuthorBlock {
+    padding: 15px 17px;
+    border-radius: 2px;
+    background-color: #cecece;
+    // background-color: #f4f5f5;
+    margin-bottom: 2rem;
+    .authorInfoBlock {
+      display: flex;
+      align-items: center;
+      .div6 {
+        flex: 0 0 auto;
+        margin-right: 1rem;
+        width: 3.333rem;
+        height: 3.333rem;
+        border-radius: 50%;
+        ::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: inherit;
+          border-radius: inherit;
+        }
+      }
+      .authorInfoBox {
+        min-width: 0;
+        flex-grow: 1;
+        .profileBox {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-items: baseline;
+            font-size: 1.1rem;
+            color: #909090;
+            a {
+                display: inline-block;
+                max-width: 100%;
+                font-size: 1.3rem;
+                margin-right: .5rem;
+                font-weight: 700;
+                color: #333;
+                .name {
+                    display: inline-block;
+                    vertical-align: top;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .rank {
+                    margin-left: .33rem;
+                    vertical-align: middle;
+                    img {
+                        width: auto;
+                        height: auto;
+                    }
+                }
+            }
+            .ellipsis {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .div12 {
+            font-size: 1.1rem;
+            color: #909090;
+            display: block;
+            .div13 {
+                font-size: 1.1rem;
+                color: #909090;
+            }
+          }
+      }
+      .btn {
+        margin: 0 0 0 auto;
+        padding: 0;
+        width: 55px;
+        height: 26px;
+        font-size: 13px;
+        border: 1px solid #6cbd45;
+        color: #6cbd45;
+        background-color: #fff;
+      }
+    }
+}
+
+
+.subList {
+    margin: 1rem 0;
+    padding: 0 0 0 1rem;
+    background-color: #fafbfc;
+    border-radius: 3px;
+    width: 500px;
+    .item {
+      .subComment {
+        position: relative;
+        padding: 1rem 0 0;
+        .subCommentRow {
+          display: flex;
+          align-items: flex-start;
+          .subConentBox {
+            display: flex;
+            width: 100%;
+            .userBox {
+              display: inline-block;
+              height: 33px;
+              a {
+                img {
+                    width: 2.667rem;
+                    height: 2.667rem;
+                    border-radius: 50%;
+                    ::before {
+                      content: "";
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      bottom: 0;
+                      background-color: inherit;
+                      border-radius: inherit;
+                      transition: opacity .2s;
+                    }
+                }
+              }
+            }
+            .userBoxRight {
+                margin-left: .833rem;
+                margin-right: 1rem;
+                padding-bottom: 12px;
+                font-size: 1.083rem;
+                color: #17181a;
+                width: 100%;
+                .profile {
+                  display: flex;
+                  .userProfile {
+                    display: inline-block;
+                    a {
+                        font-weight: 400;
+                        font-size: 1.083rem;
+                        color: #333;
+                        margin-right: 4px;
+                        userY {
+                            display: inline-block;
+                            vertical-align: top;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            font-weight: 400;
+                            font-size: 1.083rem;
+                            color: #333;
+                            margin-right: 4px;
+                        }
+                        .rank {
+                            margin-left: .33rem;
+                            vertical-align: middle;
+                            img {
+                                width: auto;
+                                height: auto;
+                            }
+                        }
+                        .authText {
+                            font-weight: 400;
+                            font-size: 1.083rem;
+                            color: #333;
+                            margin-right: 4px;
+                            margin-left: 4px;
+                        }
+                    }
+                  }
+                  .postion {
+                    color: #8a9aa9;
+                    font-size: 13px;
+                    font-weight: 400;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 13.5rem;
+                  }
+                }
+                .contentBox {
+                  display: inline-block;
+                  margin-top: .5rem;
+                  overflow: hidden;
+                  .content {
+                    white-space: pre-wrap;
+                    color: #505050;
+                    line-height: 1.833rem;
+                  }
+                }
+                .allBox {
+                    margin-left: .833rem;
+                    margin-right: 1rem;
+                    padding-bottom: 12px;
+                    font-size: 1.083rem;
+                    color: #17181a;
+                    width: 100%;
+                }
+                .subStartBox {
+                  display: flex;
+                  margin-top: 7px;
+                  font-size: 13px;
+                  color: #8a93a0;
+                  .subLast {
+                    display: flex;
+                    margin-top: 7px;
+                    font-size: 13px;
+                    color: #8a93a0;
+                  }
+                  .delete {
+                    display: flex;
+                    margin-top: 7px;
+                    margin-left: 8px;
+                    font-size: 13px;
+                    color: #8a93a0;
+                  }
+                  .actionBox {
+                    flex: 0 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: auto;
+                    min-width: 8.8rem;
+                    font-size: 1.083rem;
+                    color: #8a93a0;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    .linkAction {
+                        display: flex;
+                        align-items: center;
+                        margin-left: .5rem;
+                        cursor: pointer;
+                    }
+                    .connetAction {
+                        display: flex;
+                        align-items: center;
+                        margin-left: .5rem;
+                        cursor: pointer;
+                    }
+                  }
+                }
+            }
+          }
+        }
+      }
+    }
+}
+
+
+
+.listBox {
+    position: relative;
+    border-top: 1px solid #ebebeb;
+    padding-top: 1.333rem;
+    ::before {
+        display: table;
+        content: "";
+        clear: both;
+    }
+    .commentFormAll {
+      margin: 0 1.666rem 1.333rem;
+    }
+    .commentForm {
+        display: flex;
+        position: relative;
+        padding: 1rem 1.333rem;
+        background-color: #fafbfc;
+        border-radius: 3px;
+        .avatarBox {
+          flex: 0 0 auto;
+          .avatar {
+            margin: 0 1rem 0 0;
+            width: 2.667rem;
+            height: 2.667rem;
+            border-radius: 50%;
+            ::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: inherit;
+                border-radius: inherit;
+            }
+          }
+        }
+        .formBox {
+            flex: 1 1 auto;
+            position: relative;
+            .authCard {
+                position: relative;
+                .authCover {
+                    color: #b1bac2;
+                    font-size: 1.17rem;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    z-index: 1;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    background-color: #fafafb;
+                }
+            }
+        }
+    }
+    // ::after {
+    //     display: table;
+    //     content: "";
+    //     clear: both;
+    // }
+}

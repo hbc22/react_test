@@ -213,6 +213,61 @@ function Style() {
                     </ul>
                 </div>
             </div>
+            <div className={styles.newContainer}>
+              <div className={styles.xcpList}>
+                <h2 className={styles.xcpListTitle}>评论列表（86）条</h2>
+                <div className={styles.xcpListList}>
+                  <div>
+                    <div className={styles.xcpItem}>
+                      <div className={styles.left}>
+                        <div className={styles.xAvatar}>
+                          <div className={styles.xAvatarPlaceholder}></div>
+                          <div className={styles.xAvatarImg}></div>
+                        </div>
+                      </div>
+                      <div className={styles.right}>
+                        <div className={styles.userBar}>
+                          <h5 className={styles.userBarName}>sdfkwesjfjf</h5>
+                        </div>
+                        <div className={styles.rightText}>
+                          <span className={styles.spanText}>
+                          湾湾迷信美国疫苗，美国疫苗的大中华区代理商在上海，湾湾的脑回路不晓得是那根线搭错了，就是不敢找上海这家公司购买美国疫苗，它们怕什么呢！
+                          </span>
+                        </div>
+                        <div className={styles.interactBar}>
+                          <div className={styles.interactBarLeft}>
+                            <span className={styles.time}>15小时钱</span>
+                            <span className={styles.report}>时钱</span>
+                          </div>
+                          <div className={styles.interactBarRight}>
+                            <div className={styles.reply}>
+                              {/* <i className={`${styles.icon} ${styles.replyIcon}`}></i> */}
+                              <svg width="20" height="20" viewBox="0 0 20 20" className={styles.icon}>
+                                <g data-v-50ec3736="" fill="none" fill-rule="evenodd">
+                                  <path data-v-50ec3736="" d="M0 0h20v20H0z"></path>
+                                  <path data-v-50ec3736="" stroke="#8a93a0" stroke-linejoin="round" d="M4.58 8.25V17h-1.4C2.53 17 2 16.382 2 15.624V9.735c0-.79.552-1.485 1.18-1.485h1.4zM11.322 2c1.011.019 1.614.833 1.823 1.235.382.735.392 1.946.13 2.724-.236.704-.785 1.629-.785 1.629h4.11c.434 0 .838.206 1.107.563.273.365.363.84.24 1.272l-1.86 6.513A1.425 1.425 0 0 1 14.724 17H6.645V7.898C8.502 7.51 9.643 4.59 9.852 3.249A1.47 1.47 0 0 1 11.322 2z"></path>
+                                </g>
+                              </svg>
+                              <span>回溯</span>
+                            </div>
+                            <div className={styles.like}>
+                              {/* <i className={`${styles.icon} ${styles.replyIcon}`}></i> */}
+                              <svg width="20" height="20" viewBox="0 0 20 20" className={styles.icon}>
+                                <g data-v-50ec3736="" fill="none" fill-rule="evenodd">
+                                  <path data-v-50ec3736="" d="M0 0h20v20H0z"></path>
+                                  <path data-v-50ec3736="" stroke="#8a93a0" stroke-linejoin="round" d="M4.58 8.25V17h-1.4C2.53 17 2 16.382 2 15.624V9.735c0-.79.552-1.485 1.18-1.485h1.4zM11.322 2c1.011.019 1.614.833 1.823 1.235.382.735.392 1.946.13 2.724-.236.704-.785 1.629-.785 1.629h4.11c.434 0 .838.206 1.107.563.273.365.363.84.24 1.272l-1.86 6.513A1.425 1.425 0 0 1 14.724 17H6.645V7.898C8.502 7.51 9.643 4.59 9.852 3.249A1.47 1.47 0 0 1 11.322 2z"></path>
+                                </g>
+                              </svg>
+                              <span>230</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
       </div>
     );
   }
